@@ -1,0 +1,28 @@
+{
+  "name": "swc-plugin-import-jsx-pragma",
+  "version": "0.0.0",
+  "description": "SWC plugin for automatically injecting an import statement for JSX pragma.",
+  "author": "Kai Hao",
+  "license": "MIT",
+  "keywords": [
+    "swc-plugin",
+    "jsx"
+  ],
+  "main": "swc_plugin_import_jsx_pragma.wasm",
+  "files": [
+    "swc_plugin_import_jsx_pragma.wasm"
+  ],
+  "packageManager": "pnpm@7.30.0",
+  "scripts": {
+    "test": "node --test test/test.mjs",
+    "prepack": "cargo build-wasi --release && cp target/wasm32-wasi/release/swc_plugin_import_jsx_pragma.wasm ."
+  },
+  "preferUnplugged": true,
+  "devDependencies": {
+    "@swc/core": "^1.3.42",
+    "prettier": "2.8.7"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
