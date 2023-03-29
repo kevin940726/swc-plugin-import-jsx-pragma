@@ -1,6 +1,6 @@
 {
   "name": "swc-plugin-import-jsx-pragma",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "SWC plugin for automatically injecting an import statement for JSX pragma.",
   "author": "Kai Hao",
   "license": "MIT",
